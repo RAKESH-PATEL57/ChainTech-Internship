@@ -32,6 +32,8 @@ header
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1000;
+    position: fixed;
 }
 
 .wrap-content
@@ -57,7 +59,8 @@ header nav ul
 {
     display: flex;
     color: var(--font-color);
-    gap: 1rem;
+    gap: 3.5rem;
+    cursor: pointer;
 }
 
 ul li a
@@ -80,7 +83,7 @@ a.active
 /*[[[[[[[[[[[[[[[[[[ company section start  ]]]]]]]]]]]]]]]]]]]*/
 #company
 {
-    position: absolute;
+    position: relative;
     /* width: 1921px; */
     width: 100%;
     height: 571.56px;
@@ -109,6 +112,8 @@ a.active
 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .intro h1
@@ -122,6 +127,13 @@ a.active
     /* line-height: 10.5px; */
     /* letter-spacing: 0.11em; */
     /* text-align: left; */
+}
+
+h1 span
+{
+        background: -webkit-linear-gradient(#00FFA7,#FFFF00);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 }
 
 .company-container p
@@ -166,4 +178,22 @@ a.active
 }
 
 /*[[[[[[[[[[[[[[[[[[ company section end    ]]]]]]]]]]]]]]]]]]]*/
+
+/*[[[[[[[[[[[[[[[[[[ services section start    ]]]]]]]]]]]]]]]]]]]*/
+#services
+{
+    min-height: 100vh;
+    position: relative;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background: var(--sbg-color);
+}
+
+#services .services-container
+{
+    border: 2px solid red;
+    width: 75%;
+}
+/*[[[[[[[[[[[[[[[[[[ services section end    ]]]]]]]]]]]]]]]]]]]*/
 
