@@ -307,13 +307,40 @@ h1 span
     position: relative;
 }
 
-.card-container .separate-card::before
+.card-container .separate-card:nth-child(4n + 1):before
 {
     content: '';
     position: absolute;
     height: 100%;
     width: 100%;
     background: var(--fcardBg-color);
+    opacity: .12;
+}
+.card-container .separate-card:nth-child(4n + 2):before
+{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: var(--scardBg-color);
+    opacity: .12;
+}
+.card-container .separate-card:nth-child(4n + 3):before
+{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: var(--tcardBg-color);
+    opacity: .12;
+}
+.card-container .separate-card:nth-child(4n + 4):before
+{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: var(--focardBg-color);
     opacity: .12;
 }
 
@@ -351,6 +378,8 @@ h1 span
 {
     width: 261px;
     height: 156px;
+    /* width: 253px;
+    height: 199px; */
 }
 
 .card-container .cardBtn
