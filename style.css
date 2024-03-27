@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root
+{
+    --fbg-color:black;
+    --sbg-color:white;
+    --font-color:#FFFFFF;
+
+    --navactive-font-color:#00FFA7;
+}
+
+body
+{
+    background: var(--fbg-color);
+    width: 100%;
+    overflow: hidden;
+}
+
+/*[[[[[[[[[[[[[[[[[[ header section start  ]]]]]]]]]]]]]]]]]]]*/
+header
+{
+    width: 100%;
+    border-bottom: 2px solid gray;
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap-content
+{
+    width: 75%;
+}
+
+header .wrap-content
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo svg
+{
+    /* Vector */
+    Width:165px;
+    Height:48.5px;
+}
+
+header nav ul
+{
+    display: flex;
+    color: var(--font-color);
+    gap: 1rem;
+}
+
+ul li a
+{
+    font-size: 1.2rem;
+    color: var(--font-color);
+    /* font-family: 'Poppins'; */
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+
+}
+
+a.active
+{
+    color: var(--navactive-font-color);
+}
+/*[[[[[[[[[[[[[[[[[[ header section end    ]]]]]]]]]]]]]]]]]]]*/
+
+/*[[[[[[[[[[[[[[[[[[ company section start  ]]]]]]]]]]]]]]]]]]]*/
+#company
+{
+    position: absolute;
+    /* width: 1921px; */
+    width: 100%;
+    height: 571.56px;
+    left: 0px;
+    top: 27.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#company .company-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--font-color);
+    width: 55%;
+    gap: 1.8rem;
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 30%;
+}
+
+.company-container .intro
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.intro h1
+{
+    /* font-family: 'Poppins'; */
+    font-size: 6rem;
+    font-weight: 900;
+    /* border: 2px solid red; */
+    line-height: 6rem;
+    /* font-size: 120px; */
+    /* line-height: 10.5px; */
+    /* letter-spacing: 0.11em; */
+    /* text-align: left; */
+}
+
+.company-container p
+{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27.39px;
+    letter-spacing: 0.06em;
+    text-align: center;
+}
+
+.company-container #startBtn
+{
+   padding: .2rem 1rem;
+   border-radius: 50px;
+   -webkit-border-radius: 50px;
+   -moz-border-radius: 50px;
+   -ms-border-radius: 50px;
+   -o-border-radius: 50px;
+    width: 10rem;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid black;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#startBtn i
+{
+    border: 1px solid black;
+    background: black;
+    color: var(--font-color);
+    padding: .3rem;
+    border-radius: 50%;
+    font-size: 1rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+/*[[[[[[[[[[[[[[[[[[ company section end    ]]]]]]]]]]]]]]]]]]]*/
+
